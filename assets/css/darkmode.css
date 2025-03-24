@@ -43,8 +43,8 @@ html, body {
   
   nav a {
     display: inline-block;
-    background-color: #FFD580; /* Soft gold */
-    color: #f2d4e8; /* Blush pink */
+    background-color: #3a2d40; /* Soft plum background */
+    color: #FF66A3;            /* Bright pink text */
     text-align: center;
     padding: 10px 16px;
     margin: 5px;
@@ -53,12 +53,22 @@ html, body {
     transition: background-color 0.3s ease, transform 0.2s ease;
     min-width: 100px;
     font-weight: bold;
+    border: 1px solid #FF66A3;
   }
   
   nav a:hover {
-    background-color: #e0b65b; /* Warm muted gold */
+    background-color: #4a3a55; /* Slightly brighter plum on hover */
     transform: scale(1.05);
+    color: #FFD580;            /* Soft gold text on hover for pop */
   }
+
+  nav a.active {
+    outline: 2px solid #FF66A3; /* Bright pink outline */
+    background-color: #4a3a55;  /* Slight glow plum */
+    color: #FFD580;             /* Soft gold text */
+  }
+  
+  
   
   /* -----------------------
      Header
@@ -438,3 +448,89 @@ html, body {
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  /* -----------------------
+   Calendar Styling (Dark Mode)
+------------------------ */
+
+.calendar-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  color: #f2d4e8; /* Blush pink */
+}
+
+.calendar-controls button {
+  background-color: #FF66A3; /* Bright pink */
+  color: #1e1a20; /* Dark plum text */
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.calendar-controls button:hover {
+  background-color: #e05b91; /* Slightly darker pink */
+  transform: scale(1.05);
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.calendar-header {
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 0;
+  color: #FFD580; /* Soft gold */
+}
+
+.calendar-day {
+  text-align: center;
+  padding: 12px 0;
+  background-color: #2f2533; /* Card background */
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(255, 255, 255, 0.05);
+  color: #ccc; /* Light gray text */
+  transition: transform 0.2s ease;
+}
+
+.calendar-day:hover {
+  background-color: #3a2d40;
+  transform: scale(1.05);
+}
+
+.calendar-day.empty {
+  background: none;
+  box-shadow: none;
+}
+
+/* 🔦 Highlight event days with a soft glow */
+.calendar-day:has(.event-text) {
+  background-color: #3b2f44; /* Slightly brighter plum */
+  border: 1px solid #FF66A3;
+  box-shadow: 0 0 6px rgba(255, 102, 163, 0.3); /* Pink glow */
+}
+
+.event-text {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #FF66A3; /* Bright pink for pop */
+  text-align: center;
+  font-weight: 600;
+}
+
+.event-time {
+  font-size: 0.8rem;
+  color: #FFD580; /* Soft gold */
+  margin-top: 4px;
+  text-align: center;
+  font-weight: 500;
+}

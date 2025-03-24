@@ -60,6 +60,13 @@ html, body {
     background-color: #b9972e; /* Darker gold on hover */
     transform: scale(1.05);
   }
+
+  nav a.active {
+    outline: 2px solid #D81B60; /* Magenta border */
+    background-color: #fce8e8;  /* Light blush highlight */
+    color: #4B1E38;             /* Deep plum for contrast */
+  }
+  
   
   /* -----------------------
      Header
@@ -430,3 +437,70 @@ html, body {
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  .calendar-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 0 20px;
+  }
+  
+  .calendar-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 0;
+  }
+  
+  .calendar-day {
+    text-align: center;
+    padding: 12px 0;
+    background-color: #fef8ec; /* Light theme card background */
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+
+  .calendar-day:hover {
+    background-color: #fce8e8; /* Light rosy hover */
+    transform: scale(1.05);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  
+  .calendar-day.empty {
+    background: none;
+    box-shadow: none;
+  }
+
+  .calendar-day:has(.event-text) {
+    background-color: #fbeae4; /* Light pink tint for event days */
+    border: 1px solid #D81B60;
+  }
+
+.event-text {
+  margin-top: 8px;
+  font-size: 0.85rem;              /* Slightly larger */
+  color: #4B1E38;                  /* Deep plum for contrast */
+  text-align: center;
+  font-weight: 600;                /* Semi-bold for visibility */
+}
+
+.event-time {
+  font-size: 0.8rem;
+  color: #D81B60;                  /* Raspberry magenta for contrast */
+  margin-top: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+  
+  
