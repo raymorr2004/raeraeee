@@ -80,6 +80,20 @@ html, body {
     background-color: #2a202d; /* Dark violet-gray */
     color: #f2d4e8; /* Blush pink */
   }
+
+  .social-intro {
+    background-color: #2f2533;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.04);
+    color: #f2d4e8;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
   
   /* -----------------------
      Main Content
@@ -89,6 +103,82 @@ html, body {
     padding: 20px;
     color: #ccc; /* Light gray for text */
   }
+
+  /* -----------------------
+     Contact Note (Socials)
+  ------------------------ */
+
+  .contact-note {
+    background-color: #2a202d; /* Match header/footer bg */
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #FFD580; /* Soft gold */
+    text-align: center;
+    color: #f2d4e8;
+  }
+  
+  .contact-note h2 {
+    color: #FF66A3;
+    margin-bottom: 10px;
+  }
+  
+  .contact-note a {
+    color: #FFD580;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-note a:hover {
+    color: #FF66A3;
+    text-decoration: underline;
+  }
+  
+/* -----------------------
+     Email (Socials)
+  ------------------------ */
+
+  .email-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .email-address {
+    display: none;
+    cursor: pointer;
+    color: #ccc;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+  
+  .email-block.expanded .email-address {
+    display: block;
+    text-align: center;
+  }
+  
+  .email-address:hover {
+    color: #FF66A3;
+  }
+  
+  .copy-confirm {
+    position: absolute;
+    bottom: -1.2em;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    color: #FF66A3;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+  }
+
+  .email-block img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  
+
   
   /* -----------------------
    Welcome Section
@@ -343,6 +433,38 @@ html, body {
     color: #FF66A3; /* Bright pink hover */
     text-decoration: none;
   }
+
+  /* -----------------------
+     Game Page Messages
+  ------------------------ */
+
+  .games-intro {
+    background-color: #2f2533;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.04);
+    color: #f2d4e8;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .games-note {
+    background-color: #2a202d;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #FFD580;
+    text-align: center;
+    color: #f2d4e8;
+  }
+  
+  .games-note h2 {
+    color: #FF66A3;
+    margin-bottom: 10px;
+  }
+  
   
   /* Link styling inside social descriptions */
   .social-link p a {
@@ -391,8 +513,21 @@ html, body {
   
   #about-page .article-box.expanded h3 {
     margin-bottom: 10px;
-    /* You can remove this if you want zero visual change */
   }
+
+  .about-intro {
+    background-color: #2f2533;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(255, 255, 255, 0.04);
+    color: #f2d4e8;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
 
   /* -----------------------
    Media Queries (Dark Mode Responsive)
@@ -533,4 +668,17 @@ html, body {
   margin-top: 4px;
   text-align: center;
   font-weight: 500;
+}
+
+.calendar-intro {
+  background-color: #2f2533;
+  padding: 20px;
+  margin: 0 auto 20px;
+  max-width: 800px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(255, 255, 255, 0.04);
+  color: #f2d4e8;
+  font-size: 1rem;
+  line-height: 1.6;
 }

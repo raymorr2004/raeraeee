@@ -78,6 +78,20 @@ html, body {
     background-color: #f8f0eb; /* Soft cream */
     color: #4B1E38; /* Deep plum */
   }
+
+  .social-intro {
+    background-color: #fef8ec;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    color: #4B1E38;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
   
   /* -----------------------
      Main Content
@@ -87,6 +101,83 @@ html, body {
     padding: 20px;
     color: #333;
   }
+
+  /* -----------------------
+     Contact Note (Socials)
+  ------------------------ */
+
+  .contact-note {
+    background-color: #f8f0eb; /* Soft cream like the header */
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #D4AF37; /* Gold border like the socials panel */
+    text-align: center;
+    color: #4B1E38; /* Deep plum */
+  }
+  
+  .contact-note h2 {
+    color: #D81B60; /* Magenta */
+    margin-bottom: 10px;
+  }
+  
+  .contact-note a {
+    color: #D81B60;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact-note a:hover {
+    color: #b9972e; /* Gold on hover */
+    text-decoration: underline;
+  }
+
+  /* -----------------------
+     Email (Socials)
+  ------------------------ */
+
+  .email-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .email-address {
+    display: none;
+    cursor: pointer;
+    color: #4B1E38;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+  }
+  
+  .email-block.expanded .email-address {
+    display: block;
+    text-align: center;
+  }
+  
+  .email-address:hover {
+    color: #D81B60;
+  }
+  
+  .copy-confirm {
+    position: absolute;
+    bottom: -1.2em;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85rem;
+    color: #D81B60;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .email-block img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  
+  
+  
   
   /* -----------------------
      Welcome Section
@@ -343,7 +434,37 @@ html, body {
     color: #D81B60; /* Magenta on hover */
     text-decoration: none;
   }
+
+  /* -----------------------
+     Game Page Messages
+  ------------------------ */
   
+  .games-intro {
+    background-color: #fef8ec;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    color: #4B1E38;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .games-note {
+    background-color: #f8f0eb;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #D4AF37;
+    text-align: center;
+    color: #4B1E38;
+  }
+  
+  .games-note h2 {
+    color: #D81B60;
+    margin-bottom: 10px;
+  }
   
   
   /* Link styling inside social descriptions */
@@ -393,6 +514,20 @@ html, body {
     margin-bottom: 10px;
     /* You can remove this if you want zero visual change */
   }
+
+  .about-intro {
+    background-color: #fef8ec;
+    padding: 20px;
+    margin: 0 auto 20px;
+    max-width: 800px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+    color: #4B1E38;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
   
   
   /* -----------------------
@@ -501,6 +636,20 @@ html, body {
   text-align: center;
   font-weight: 500;
 }
+
+.calendar-intro {
+  background-color: #fef8ec;
+  padding: 20px;
+  margin: 0 auto 20px;
+  max-width: 800px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  color: #4B1E38;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 
   
   
