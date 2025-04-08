@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // If a theme was saved, use it
     if (savedTheme === "dark") {
       themeLink.setAttribute("href", "assets/css/darkmode.css");
-      if (toggleBtn) toggleBtn.textContent = "Light Mode";
+      if (toggleBtn) toggleBtn.textContent = "♥ Light Mode";
     }
   
     // Listen for toggle button click
@@ -22,11 +22,11 @@ window.addEventListener("DOMContentLoaded", () => {
         if (isDarkMode) {
           themeLink.setAttribute("href", "assets/css/style.css");
           localStorage.setItem("theme", "light");
-          toggleBtn.textContent = "Dark Mode";
+          toggleBtn.textContent = "♥ Dark Mode";
         } else {
           themeLink.setAttribute("href", "assets/css/darkmode.css");
           localStorage.setItem("theme", "dark");
-          toggleBtn.textContent = "Light Mode";
+          toggleBtn.textContent = "♥ Light Mode";
         }
       });
     }
